@@ -1,0 +1,23 @@
+body {
+    margin: 100px;
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    text-align: center;
+}
+.pica {
+    width: 33%;
+}
+ img {
+    width: 500px;
+    height: 400px;
+}
+.oil {
+    width: 33%;
+}
+.pasta {
+    width: 33%;
+}
