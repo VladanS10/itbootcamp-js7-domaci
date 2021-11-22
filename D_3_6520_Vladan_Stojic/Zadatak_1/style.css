@@ -1,51 +1,25 @@
 body {
-    margin: 100px 200px 100px 150px;
+    margin: 30px;
 }
-.h1_tekst {
-    font-size: 50px;
+img {
+    height: 450px;
+    width: 440px;
 }
-.actors img {
-    width: 400px;
-    height: 500px;
+.icons {
+    width: 150px;
+    height: 150px;
 }
-.lorem {
-    padding-bottom: 30px;
+.header {
+    font-size: 45px;
+}
+.tekst {
     font-size: 25px;
 }
 .academy {
-    text-align: left;
-    font-size: 50px;
+    font-size: 45px;
+    text-align: start;
 }
-.academy th {
-    padding: 25px 0;
-}
-.best{
+.best {
+    font-size: 25px;
     text-align: center;
-    font-weight: bold;
-}
-.best td {
-    padding-bottom: 50px;
-    font-size: 30px;
-}
-.spot {
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-}
-.text h1, p{
-    text-align: center;
-    display: block;
-    margin: 0;
-}
-.spot img {
-    width: 200px;
-    height: 200px;
-}
-.text h2, p {
-    text-align: center;
-    display: block;
-    margin: 0;
-}
-a{
-    font-size: 30px;
 }
