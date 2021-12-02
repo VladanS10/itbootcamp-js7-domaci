@@ -16,7 +16,7 @@ console.log(`Proizvod svih brojeva izmedju ${n} i ${m} je: ${proizvod}`);
 // ZADATAK 2
 
 n = 3;
-m = 21;
+m = 7;
 i = n;
 let zbir = 0;
 
