@@ -13,12 +13,16 @@ console.log(`Mika treba da dobije kusur ${kusurMika} dinara`);
 
 
 //Zadatak 2
-let n = 98;
-let dan1 = 15;
+let n = 100;
+let dan1 = 25;
 let dan2 = dan1 + 2;
+let ukupno = n - (dan1 + dan2);
 
-if(dan1 + dan2 < n / 2) {
+
+if(dan1 + dan2 > n / 2) {
     console.log("Ostalo je da se procita još manje od polovine knjige");
+}else {
+    console.log(`Ostalo je da procita ${ukupno}`);
 };
 
 //Zadatak 3
