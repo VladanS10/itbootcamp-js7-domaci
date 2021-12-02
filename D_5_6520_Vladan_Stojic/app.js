@@ -21,7 +21,8 @@ let ukupno = n - (dan1 + dan2);
 
 if(dan1 + dan2 > n / 2) {
     console.log("Ostalo je da se procita još manje od polovine knjige");
-}else {
+}
+else {
     console.log(`Ostalo je da procita ${ukupno}`);
 };
 
