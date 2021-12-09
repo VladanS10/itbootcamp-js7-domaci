@@ -1,18 +1,20 @@
 // 1. Zadatak
 // Naći i ispisati najveći od tri uneta broja a, b i c, korišćenjem logičkih operatora.
 
-let a = 25;
-let b = 17;
-let c = 27;
+let a = 15;
+let b = 9;
+let c = 21;
 
-let max = a;
-if(max < b){
-    max = b;
+
+if(a > b && a > c){
+    document.body.innerHTML = `<p style="color: blue; font-size: 35px">Broj ${a} je najveci od ponudjenih</p>`;
 }
-if(max < c) {
-    max = c;
+else if(a < b && b > c) {
+    document.body.innerHTML = `<p style="color: blue; font-size: 35px">Broj ${b} je najveci od ponudjenih</p>`;
 }
-console.log(`Najveci broj od ${a}, ${b}, ${c} izabrana broja je broj: ${max}`);
+else{
+    document.body.innerHTML = `<p style="color: blue; font-size: 35px">Broj ${c} je najveci od ponudjenih</p>`;
+}
 
 
 
@@ -23,13 +25,13 @@ console.log(`Najveci broj od ${a}, ${b}, ${c} izabrana broja je broj: ${max}`);
 let temp = 55;
 
 if(temp < -15) {
-    document.body.innerHTML = `<p style="font-size: 50px; color:blue">Ekstremno niska temperatura</p>`;
+    document.body.innerHTML += `<p style="font-size: 50px; color:blue">Ekstremno niska temperatura</p>`;
 }
 else if(temp > 40) {
-    document.body.innerHTML = `<p style="color:red; font-size: 50px">Ekstremno visoka temperatura</p>`;
+    document.body.innerHTML += `<p style="color:red; font-size: 50px">Ekstremno visoka temperatura</p>`;
 }
 else {
-    document.body.innerHTML = `<p style="color:green; font-size: 25px">Temperatura je normalna</p>`;
+    document.body.innerHTML += `<p style="color:green; font-size: 25px">Temperatura je normalna</p>`;
 }
 
 
