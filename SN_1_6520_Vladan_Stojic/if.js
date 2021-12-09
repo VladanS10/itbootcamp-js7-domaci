@@ -1,18 +1,18 @@
 // 1. Zadatak
 // Naći i ispisati najveći od tri uneta broja a, b i c, korišćenjem logičkih operatora.
 
-// let a = 25;
-// let b = 17;
-// let c = 27;
+let a = 25;
+let b = 17;
+let c = 27;
 
-// let max = a;
-// if(max < b){
-//     max = b;
-// }
-// if(max < c) {
-//     max = c;
-// }
-// console.log(`Najveci broj od ${a}, ${b}, ${c} izabrana broja je broj: ${max}`);
+let max = a;
+if(max < b){
+    max = b;
+}
+if(max < c) {
+    max = c;
+}
+console.log(`Najveci broj od ${a}, ${b}, ${c} izabrana broja je broj: ${max}`);
 
 
 
@@ -20,17 +20,17 @@
 // // Ispisati na ekranu „ekstremna temperatura“ ukoliko je temperatura manja od -15
 // // stepeni Celzijusovih ili veća od 40 stepeni Celzijusovih.
 
-// let temp = 55;
+let temp = 55;
 
-// if(temp < -15) {
-//     document.body.innerHTML = `<p style="font-size: 50px; color:blue">Ekstremno niska temperatura</p>`;
-// }
-// else if(temp > 40) {
-//     document.body.innerHTML = `<p style="color:red; font-size: 50px">Ekstremno visoka temperatura</p>`;
-// }
-// else {
-//     document.body.innerHTML = `<p style="color:green; font-size: 25px">Temperatura je normalna</p>`;
-// }
+if(temp < -15) {
+    document.body.innerHTML = `<p style="font-size: 50px; color:blue">Ekstremno niska temperatura</p>`;
+}
+else if(temp > 40) {
+    document.body.innerHTML = `<p style="color:red; font-size: 50px">Ekstremno visoka temperatura</p>`;
+}
+else {
+    document.body.innerHTML = `<p style="color:green; font-size: 25px">Temperatura je normalna</p>`;
+}
 
 
 
@@ -40,14 +40,14 @@
 // // jedno od sledeća dva pravila: godina nije deljiva sa 100 ili je deljiva sa 400.
 
 
-// let izabranaGodina = 2024;
-// if(izabranaGodina % 4 == 0){
-//     if(izabranaGodina % 100 !=0 || izabranaGodina % 400 == 0)
-//     console.log("Godina je prestupna");
+let izabranaGodina = 2024;
+if(izabranaGodina % 4 == 0){
+    if(izabranaGodina % 100 !=0 || izabranaGodina % 400 == 0)
+    console.log("Godina je prestupna");
     
-// }else{
-//     console.log("Godina nije prestupna");
-// }
+}else{
+    console.log("Godina nije prestupna");
+}
 
 
 
@@ -57,33 +57,33 @@
 // // Jedan butik ima radno vreme od 9h do 20h radnim danima, a vikendom od 10h do
 // // 18h. Preuzeti dan i vreme sa računara i ispitati da li je butik trenutno otvoren.
 
-// let vreme = new Date();
-// let dani = vreme.getDay();
-// let sati = vreme.getHours();
-// // console.log(dani);
-// // console.log(sati);
+let vreme = new Date();
+let dani = vreme.getDay();
+let sati = vreme.getHours();
+// console.log(dani);
+// console.log(sati);
 
-// const pocetakRadniDan = 9;
-// const krajRadniDan = 20;
-// const pocetakVikend = 10;
-// const krajVikend = 18;
+const pocetakRadniDan = 9;
+const krajRadniDan = 20;
+const pocetakVikend = 10;
+const krajVikend = 18;
 
-// if(dani == 0 || dani == 6){
-//     if(sati >= pocetakVikend && sati < krajVikend){
-//         console.log(`Trenutno je vikend i butik radi`);
-//     }
-//     else {
-//         console.log(`Trenutno je vikend i butik ne radi`);
-//     }
-// }
-// if(dani >=1 && dani < 6){
-//     if(sati >= pocetakRadniDan && sati < krajRadniDan) {
-//         console.log(`Trenutno je radni dan i butik radi`);
-//     }
-//     else{
-//         console.log(`Trenutno je radni dan i butik ne radi`);
-//     }
-// }
+if(dani == 0 || dani == 6){
+    if(sati >= pocetakVikend && sati < krajVikend){
+        console.log(`Trenutno je vikend i butik radi`);
+    }
+    else {
+        console.log(`Trenutno je vikend i butik ne radi`);
+    }
+}
+if(dani >=1 && dani < 6){
+    if(sati >= pocetakRadniDan && sati < krajRadniDan) {
+        console.log(`Trenutno je radni dan i butik radi`);
+    }
+    else{
+        console.log(`Trenutno je radni dan i butik ne radi`);
+    }
+}
 
 
 
@@ -95,18 +95,19 @@
 
 
 // // Datum i vreme sam preuzeo iz prethodnog zadatka
+
 // // let datum = vreme.ge
-// let mesec = vreme.getMonth() + 1;
-// console.log(mesec);
-// let datum = vreme.getDate();
-// console.log(datum);
+let mesec = vreme.getMonth() + 1;
+console.log(mesec);
+let datum = vreme.getDate();
+console.log(datum);
 
 
-// let danUMesecu = new Date(vreme.getFullYear(), vreme.getMonth() + 1, 0).getDate();
+let danUMesecu = new Date(vreme.getFullYear(), vreme.getMonth() + 1, 0).getDate();
 
-// let preostaloDana = danUMesecu - datum;
+let preostaloDana = danUMesecu - datum;
 
-// console.log(`Preostalo je jos ${preostaloDana} do kraja meseca`);
+console.log(`Preostalo je jos ${preostaloDana} do kraja meseca`);
 
 
 
