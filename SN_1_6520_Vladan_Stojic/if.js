@@ -166,7 +166,7 @@ if(maxOsoba >= n){
 // satima i minutima). Ukoliko nema preklapanja u radnim vremenima ova dva
 // lekara, na ekranu ispisati da nema preklapanja.
 
-let pocDr1 =  9 * 60 + 4;
+let pocDr1 =  9 * 60 + 50;
 let krajDr1 = 18 * 60 + 4;
 
 let pocDr2 = 9 * 60 + 4;
