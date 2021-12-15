@@ -42,16 +42,17 @@ function vrati2(n, m){
     let suma = 0;
     let brojac= 0;
     for(let i = n; i <= m; i++){
+        suma += i;
         if(i % 10 == 3){
-            suma += i;
             brojac++;
         }
     }
     sredina = suma / brojac;
-    console.log(suma);
-    console.log(`Aritmeticka sredina sume je: ${sredina}`);
+    return sredina
 }
-vrati2(5, 17);
+let arSredina = vrati2(2,24);
+
+console.log(`Aritmeticka sredina sume je: ${arSredina}`);
 
 
 
