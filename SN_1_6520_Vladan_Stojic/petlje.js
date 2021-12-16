@@ -1,10 +1,10 @@
 // 9. Zadatak
 // Ispisati dvostruku vrednost brojeva od 5 do 15.
 
-let t = 5;
-for(i = t; i <= 15; i++){
-    t = i + i;
-    console.log(t);
+let dvostrukaVrednost = 5;
+for(i = dvostrukaVrednost; i <= 15; i++){
+    dvostrukaVrednost = i + i;
+    console.log(dvostrukaVrednost);
 }
 
 
@@ -16,11 +16,11 @@ for(i = t; i <= 15; i++){
 
 let n = 3;
 let m = 10;
-let p = 0;
+suma = 0;
 for(i = n; i <= m; i++) {
-    p += i;
+    suma += i;
 }
-console.log(p);
+console.log(suma);
 
 
 
@@ -33,12 +33,12 @@ console.log(p);
 n = 1;
 m = 5;
 
-p = 0;
+suma = 0;
 
 for(i = n; i <= m; i++){
-    p += i * i;
+    suma += i * i;
 }
-console.log(p);
+console.log(suma);
 
 
 
@@ -52,13 +52,13 @@ console.log(p);
 n = 20;
 m = 100;
 
-p = 1;
+proizvod = 1;
 for(i = n; i <= m; i++){
     if(i % 11 == 0){
-        p *= i;
+        proizvod *= i;
     }
 }
-console.log(p);
+console.log(proizvod);
 
 
 
@@ -70,7 +70,7 @@ console.log(p);
 
 n = -11;
 m = 25;
-let suma = 0;
+suma = 0;
 let suma1 = 0;
 for(i = n; i<=m; i++){
     if(i < 0 ) {
@@ -94,13 +94,13 @@ console.log(`Od 0 do ${m} ima ${suma1} pozitivnih brojeva ukljucujuci i 0`);
 n = 5;
 m = 50;
 
-p = 0;
+suma = 0;
 for(i = n; i<= m; i++){
     if(i % 3 == 0 || i % 5 == 0){
-        p++;
+        suma++;
     }
 }
-console.log(`Broj brojeva od 5 do 50 koji su deljivi sa 3 ili sa 5 je: ${p}`);
+console.log(`Broj brojeva od 5 do 50 koji su deljivi sa 3 ili sa 5 je: ${suma}`);
 
 
 
@@ -112,13 +112,13 @@ console.log(`Broj brojeva od 5 do 50 koji su deljivi sa 3 ili sa 5 je: ${p}`);
 n = 5;
 m = 10;
 let a = 3;
-p = 1;
+proizvod = 1;
 for(i = n; i <= m; i++){
     if(i % a == 0){
-        p *= i;
+        proizvod *= i;
     }
 }
-console.log(`Proizvod brojeva od ${n} do ${m} koji su deljivi sa ${a} je: ${p}`);
+console.log(`Proizvod brojeva od ${n} do ${m} koji su deljivi sa ${a} je: ${proizvod}`);
 
 
 
@@ -131,7 +131,7 @@ console.log(`Proizvod brojeva od ${n} do ${m} koji su deljivi sa ${a} je: ${p}`)
 // Npr. za broj 6, delioci su 1, 2, 3, 6, što znači da ima 2 delioca koji su deljivi brojem 3
 // (3 i 6), ali samo jedan od njih je neparan (broj 3), te je rešenje ovog primera 1.
 
-p = 17;
+let p = 17;
 suma = 0;
 for(i = 1; i <= p; i++) {
     if(i % 3 == 0 && i % 2 == 1) {
