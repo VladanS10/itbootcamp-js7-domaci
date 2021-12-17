@@ -1,10 +1,11 @@
 // 1. Zadatak
 // Napisati funkciju kojoj se prosleđuje celobrojni niz, a ona vraća sumu elemenata niza sa parnim indeksom.
-let niz = [1, 2, 3, 4, 5, 6];
+        // 0  1  2  3  4  5
+let niz = [1, 2, 3, 4, 5, 6,7];
 let parni = niz => {
     let suma = 0;
     for(let i = 0; i < niz.length; i++){
-        if(niz[i] % 2 != 0){
+        if(i % 2 == 0){
             suma += niz[i];
         }
     }
