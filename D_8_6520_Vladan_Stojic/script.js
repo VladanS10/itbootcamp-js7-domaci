@@ -27,15 +27,15 @@ let promena = niz2 =>{
     for(let i = 0; i < niz2.length; i++){
         if(niz2[i] % 2 != 0 && i % 2 == 0){
             niz2[i] = -niz2[i];
-            console.log(niz2);
         }
     }
 }
 promena(niz2);
+console.log(niz2);
 
 // 3. Zadatak
 //  Napisati funkciju kojoj se prosleđuje celobrojni niz, a ona vraća broj elemenata niza sa neparnim indeksom.
-
+        //  0  1   2   3   4   5    6    7
 let niz3 = [1, 12, 15, 27, 35, 74, 150, 164];
 
 let prosledjuje = niz3 => {
