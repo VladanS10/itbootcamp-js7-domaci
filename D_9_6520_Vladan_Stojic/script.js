@@ -21,7 +21,7 @@ let b = ["Crvena Zvezda", "Partizan", "Real Madrid", "Barselona", "Armani", "Ana
 let kosarka = niz =>{
     let tabela = "<table border= 1>"
     niz.forEach(elem =>{
-        tabela += `<tr><td>${elem}</td></td>`    
+        tabela += `<tr><td>${elem}</td></tr>`    
     });
     tabela += "</table>"
     document.body.innerHTML += tabela;
@@ -45,3 +45,4 @@ let slika = niz =>{
     document.body.innerHTML += rez
 }
 slika(c);
+
