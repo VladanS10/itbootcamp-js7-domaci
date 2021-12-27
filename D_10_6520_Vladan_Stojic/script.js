@@ -5,7 +5,8 @@ let obj = {
     kisa: true,
     sunce: false,
     oblacno: true,
-    temp: [25, 5, 15, -25],
+    temp: [25, 50, 3, 25],
+
     // 1. Zadatak
     tropski: function(){
         for(let i = 0; i < this.temp.length; i++){
@@ -15,9 +16,11 @@ let obj = {
         }
         return true;
     },
+
+
     // 2. Zadatak
     nepovoljan: function(){
-        for(let i = 0; i< this.temp.length; i++){
+        for(let i = 0; i < this.temp.length - 1; i++){
             if(this.temp[i] - this.temp[i+1] > 8){
                 return true;
             }
@@ -45,8 +48,7 @@ let obj = {
             }
         }
         return false;
-    }
-
+        }
     }
     console.log(obj.tropski());
     console.log(obj.nepovoljan());
