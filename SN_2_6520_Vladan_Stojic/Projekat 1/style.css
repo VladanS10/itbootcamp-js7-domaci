@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color: blanchedalmond;
+}
+body {
+    background-image: url('img/R.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    display: block;
+}
+h1 {
+    text-align: center;
+}
+.par {
+    text-align: center; 
+    font-size: 30px;
+}
+ul {
+    font-size: 25px; 
+    list-style: none;
+}
+section {
+    display: flex;
+}
+section h1 {
+    padding-top: 25px;
+    text-align: left;
+}
+form {
+    padding: 50px;
+}
+form label {
+    padding: 10px;
+}
+form p {
+    padding: 5px;
+}
+#ruza{
+    margin-left: 11px;
+}
+.dugme {
+    padding-top: 125px;
+}
+img {
+    width: 50px;
+}
+#cenaBezPopusta{
+    padding: 25px;
+    font-size: 25px;
+}
+#cenaSaPopustom{
+    padding: 25px;
+    font-size: 25px;
+}
+button{
+    color: black;
+}
+input {
+    color: black;
+}
