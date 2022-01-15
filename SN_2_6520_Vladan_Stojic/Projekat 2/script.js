@@ -113,6 +113,7 @@ let disableInput = () =>{
 }
 
 posaljiBtn.addEventListener("click", ()=>{
+
     disableInput();
     posaljiBtn.disabled = true
     for(let i = 0; i < tacniInputiKlasa.length; i++){
