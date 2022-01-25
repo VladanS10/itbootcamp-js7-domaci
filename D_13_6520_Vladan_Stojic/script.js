@@ -22,8 +22,8 @@ let prosecnaVisina = arr =>{
         visina += el.visina;
     })
     prVisina = visina / arr.length
-    console.log(prVisina);
-    
+    console.log(prVisina.toFixed(2));
+    document.body.innerHTML += `<p>${prVisina.toFixed(2)} je prosecna visina kosarkasa</p>`
 }
 
 // console.log(sportisti(prosecnaVisina));
@@ -40,6 +40,7 @@ let najmanjeTransfera = arr =>{
     arr.forEach(i =>{
         if(min == i.timovi.length){
             console.log(`${i.imePrezime}`);
+            document.body.innerHTML += `<p>${i.imePrezime}: Ima najvanje transfera</p>`;
         }
     })
 }
@@ -50,6 +51,7 @@ let igraliZaLejkerse = arr =>{
     arr.forEach(el =>{
         if(el.timovi.includes("Lakers")){
             console.log(el.imePrezime);
+            document.body.innerHTML += `<p>${el.imePrezime} Igrao je za Lejkerse</p>`
         }
     })
 }
