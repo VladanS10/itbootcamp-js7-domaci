@@ -2,21 +2,25 @@ let movies = db.collection("movies")
 
 let movie2 = {
     name: "Batman",
-    director: "Tim Burton",
+    director: {
+        name: "Tim",
+        surname: "Burton"},
     release_year: 2022,
     genres: ["Action","Crime", "Drama"],
     rating: 7.5
 }
 let movie3 = {
     name: "Spiderman",
-    director: "Jon Watts",
+    director: {
+        name: "Jon",
+        surname: "Watts"},
     release_year: 2019,
     genres: ["Action","Crime", "Comedy"],
     rating: 7.4
 }
 
-// Dodaje filmove
-
+// Dodaje filmova
+// Prvi film
 db.collection("movies")
 .doc("movie2")
 .set(movie2)
@@ -26,7 +30,7 @@ db.collection("movies")
 .catch(err =>{
     console.log(`Nije unet obj movie 2`, err);
 });
-
+// Drugi film
 db.collection("movies")
 .doc("movie3")
 .set(movie3)
@@ -124,8 +128,8 @@ db.collection("movies")
 db.collection("movies")
 .doc("movie2")
 .update({
-    director: "Pera Peric",
-    release_year: 1995
+    "director.name": "Vladan",
+    "director.surname": "Stojic"
 })
 .then(()=>{
     console.log(`Uspesno promenjen ime obj movie 3`);
@@ -138,7 +142,8 @@ db.collection("movies")
 db.collection("movies")
 .doc("movie3")
 .update({
-    director: "Vladan Stojic"
+    "director.name": "Pera",
+    "director.surname": "Peric"
 })
 .then(()=>{
     console.log(`Uspesno promenjen ime obj movie 3`);
